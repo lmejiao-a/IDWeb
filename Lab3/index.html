@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web de Gestión Académica</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Universidad
+            </a>
+
+            <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Mostrar menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">
+                            Cursos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">
+                            Noticias
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex gap-2">
+
+                    <a 
+                        href="login.html" 
+                        class="btn btn-outline-light">
+                        Iniciar Sesión
+                    </a>
+
+                    <a 
+                        href="registro.html" 
+                        class="btn btn-primary">
+                        Registrarse
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-text">
+
+            <h1>
+                ¡Construye tu futuro!
+            </h1>
+
+            <p>
+                Esto puede ser el inicio de tu mañana
+                no tengas miedo de dar el primer paso.
+            </p>
+
+            <p>
+                Aprende, desarrolla nuevas habilidades y
+                prepárate para enfrentar los desafíos del futuro.
+            </p>
+
+            <a 
+                href="registro.html" 
+                class="btn btn-primary btn-lg">
+                Comenzar ahora
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img 
+                src="https://www.unsa.edu.pe/wp-content/uploads/2025/09/POrtada-UNSA-primer-lugar-878x426.jpg"
+                alt="Estudiantes universitarios">
+
+        </div>
+
+    </section>
+
+    <section class="cursos py-5" id="cursos">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">
+                Cursos Ofertados
+            </h2>
+
+            <p class="text-center mb-5">
+                Conoce algunos de los cursos disponibles
+                en nuestra universidad.
+            </p>
+
+            <div class="cursos-grid">
+
+                <div class="curso-card">
+
+                    <div class="curso-icon">
+                    </div>
+
+                    <h3>
+                        Calculo
+                    </h3>
+
+                    <p>
+                        Aprende fundamentos de matemática
+                        en el estudio de derivdas.
+                    </p>
+
+                </div>
+
+                <div class="curso-card">
+
+                    <div class="curso-icon">
+                        
+                    </div>
+
+                    <h3>
+                        Introduccion al Desarrollo Web
+                    </h3>
+
+                    <p>
+                        Desarrolla tus habilidades para crear
+                        paginas web y gestionarlas.
+                    </p>
+
+                </div>
+
+                <div class="curso-card">
+
+                    <div class="curso-icon">
+                    </div>
+
+                    <h3>
+                        Desarrollo de Software Orientada
+                        a Objetos
+                    </h3>
+
+                    <p>
+                        Conoce los fundamentos del diseño y
+                        construcción de objetos.
+                    </p>
+
+                </div>
+
+                <div class="curso-card">
+
+                    <div class="curso-icon">
+                    </div>
+
+                    <h3>
+                        Taller de Narrativa
+                    </h3>
+
+                    <p>
+                        Aprender a usar elementos de
+                        storytelling al contar historias.
+                    </p>
+
+                </div>
+
+                <div class="curso-card">
+
+                    <div class="curso-icon">
+                    </div>
+
+                    <h3>
+                        Estructuras Discretas II
+                    </h3>
+
+                    <p>
+                        Estudia los conjuntos de elementos
+                        finitos y infinitos.
+                    </p>
+
+                </div>
+
+                <div class="curso-card">
+
+                    <div class="curso-icon">
+                    </div>
+
+                    <h3>
+                        Linguistica
+                    </h3>
+
+                    <p>
+                        Estudio de los textos
+                        enfocados en la compresion lectora.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="noticias py-5 bg-light" id="noticias">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">
+                Noticias y Eventos
+            </h2>
+
+            <p class="text-center mb-5">
+                Mantente informado sobre las actividades
+                de nuestra universidad.
+            </p>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Inicio del semestre académico
+                            </h5>
+
+                            <p class="card-text">
+                                Conoce las fechas importantes
+                                para el inicio del nuevo semestre.
+                            </p>
+
+                            <button 
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalSemestre">
+
+                                Más información
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Feria Universitaria
+                            </h5>
+
+                            <p class="card-text">
+                                Participa en nuestra próxima
+                                feria de proyectos académicos.
+                            </p>
+
+                            <button 
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalFeria">
+
+                                Más información
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Inscripciones abiertas
+                            </h5>
+
+                            <p class="card-text">
+                                Ya puedes registrarte para
+                                los cursos del próximo ciclo.
+                            </p>
+
+                            <button 
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalInscripciones">
+
+                                Más información
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div 
+        class="modal fade"
+        id="modalSemestre"
+        tabindex="-1"
+        aria-labelledby="modalSemestreLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 
+                        class="modal-title"
+                        id="modalSemestreLabel">
+
+                        Inicio del semestre
+
+                    </h5>
+
+                    <button 
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    El nuevo semestre académico comenzará
+                    próximamente. Revisa el calendario académico
+                    para conocer las fechas de matrícula y clases.
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button 
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Cerrar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div 
+        class="modal fade"
+        id="modalFeria"
+        tabindex="-1"
+        aria-labelledby="modalFeriaLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 
+                        class="modal-title"
+                        id="modalFeriaLabel">
+
+                        Feria Universitaria
+
+                    </h5>
+
+                    <button 
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    La feria universitaria permitirá a los
+                    estudiantes presentar sus proyectos y
+                    compartir sus experiencias académicas.
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button 
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Cerrar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div 
+        class="modal fade"
+        id="modalInscripciones"
+        tabindex="-1"
+        aria-labelledby="modalInscripcionesLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 
+                        class="modal-title"
+                        id="modalInscripcionesLabel">
+
+                        Inscripciones abiertas
+
+                    </h5>
+
+                    <button 
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    Las inscripciones para los cursos están
+                    disponibles. Regístrate para conocer la
+                    oferta académica y seleccionar tus cursos.
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <a 
+                        href="registro.html"
+                        class="btn btn-primary">
+
+                        Registrarse
+
+                    </a>
+
+                    <button 
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Cerrar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
