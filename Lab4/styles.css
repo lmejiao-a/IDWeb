@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.contenedor {
+    width: min(900px, 92%);
+    margin: 35px auto;
+}
+
+.cabecera {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.cabecera h1 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.cabecera p {
+    color: #64748b;
+}
+
+.panel {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+
+.panel h2 {
+    margin-top: 0;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.campo input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.boton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.boton-principal {
+    width: 100%;
+    padding: 13px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+}
+
+.boton-principal:hover {
+    background: #1d4ed8;
+}
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.estadistica {
+    background: #eff6ff;
+    padding: 16px 8px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.estadistica span,
+.estadistica strong {
+    display: block;
+}
+
+.estadistica span {
+    color: #475569;
+    font-size: 14px;
+}
+
+.estadistica strong {
+    font-size: 25px;
+    margin-top: 8px;
+    color: #1d4ed8;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.filtro {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.filtro:hover {
+    background: #cbd5e1;
+}
+
+.filtro.activo {
+    background: #2563eb;
+    color: white;
+}
+
+.lista-tareas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tarea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #f59e0b;
+    border-radius: 9px;
+}
+
+.tarea.completada {
+    border-left-color: #16a34a;
+    background: #f0fdf4;
+}
+
+.tarea-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.tarea-info h3 {
+    margin: 0 0 8px;
+    overflow-wrap: anywhere;
+}
+
+.tarea-info p {
+    margin: 5px 0;
+    color: #64748b;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.tarea.completada .tarea-info h3 {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+.tarea-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.boton-estado {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.boton-eliminar {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.boton-estado:hover {
+    background: #bbf7d0;
+}
+
+.boton-eliminar:hover {
+    background: #fecaca;
+}
+
+.alerta {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+
+.alerta-error {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+.alerta-exito {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.vacio {
+    padding: 25px;
+    text-align: center;
+    color: #64748b;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        margin: 20px auto;
+    }
+
+    .panel {
+        padding: 17px;
+    }
+
+    .cabecera h1 {
+        font-size: 25px;
+    }
+
+    .tarea {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .tarea-acciones {
+        width: 100%;
+    }
+
+    .estadistica span {
+        font-size: 12px;
+    }
+}

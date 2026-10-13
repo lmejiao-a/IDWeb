@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas Universitarias</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <header class="cabecera">
+            <h1>Gestor de Tareas Universitarias</h1>
+        </header>
+
+        <section class="panel">
+            <h2>Registrar nueva tarea</h2>
+
+            <div id="alertas" aria-live="polite"></div>
+
+            <form id="formularioTarea">
+                <div class="campo">
+                    <label for="titulo">Título de la tarea</label>
+                    <input type="text" id="titulo" name="titulo">
+                </div>
+
+                <div class="campo">
+                    <label for="curso">Curso</label>
+                    <input type="text" id="curso" name="curso">
+                </div>
+
+                <div class="campo">
+                    <label for="fechaEntrega">Fecha de entrega</label>
+                    <input type="date" id="fechaEntrega" name="fechaEntrega">
+                </div>
+
+                <button type="submit" class="boton boton-principal">
+                    Agregar tarea
+                </button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Mis tareas</h2>
+
+            <div class="estadisticas">
+                <div class="estadistica">
+                    <span>Total</span>
+                    <strong id="totalTareas">0</strong>
+                </div>
+                <div class="estadistica">
+                    <span>Pendientes</span>
+                    <strong id="totalPendientes">0</strong>
+                </div>
+                <div class="estadistica">
+                    <span>Completadas</span>
+                    <strong id="totalCompletadas">0</strong>
+                </div>
+            </div>
+
+            <div class="filtros">
+                <button type="button" class="boton filtro activo"
+                        data-filtro="todas">Todas</button>
+                <button type="button" class="boton filtro"
+                        data-filtro="pendientes">Pendientes</button>
+                <button type="button" class="boton filtro"
+                        data-filtro="completadas">Completadas</button>
+            </div>
+
+            <div id="listaTareas" class="lista-tareas"></div>
+        </section>
+
+        <footer>
+            <p>Gestor de Tareas Universitarias</p>
+        </footer>
+    </main>
+</body>
+</html>
